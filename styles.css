@@ -1,0 +1,87 @@
+:root {
+    --black: #191825;
+    --blue: #865DFF;
+    --dark-pink: #E384FF;
+    --light-pink: #FFA3FD;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Space Mono', monospace;
+    background-color: var(--black);
+    color: var(--blue);
+    
+}
+
+.container {
+    padding: 0 50px;
+}
+
+.title {
+    text-align: center;
+    margin: 20px;
+    color: var(--light-pink);
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 25px;
+}
+
+input[type="text"] {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+}
+
+.box {
+    height: 150px;
+    width: 100%;
+    background-color: var(--dark-pink);
+    margin-bottom: 25px;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.toggle-text {
+    font-size: 1rem;
+}
+
+.toggle-btn {
+    height: 30px;
+    width: 60px;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 0 10px;
+    background-color: white;
+}
+
+.inner-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--light-pink);
+    transition: all 250ms;
+}
+
+.toggle-btn.toggled > .inner-circle {
+    transform: translateX(30px);
+    background-color: var(--blue);
+}
+
+.unselected {
+    opacity: 0.25;
+}
